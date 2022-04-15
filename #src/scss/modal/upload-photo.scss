@@ -1,0 +1,143 @@
+.upload-photo {
+
+    &__layer {
+
+    }
+
+    &__content {    
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 24px;
+
+        &_head {
+            &_title {
+
+            }
+        }
+
+        &_img {
+            margin-bottom: 24px;
+
+            &_action.active {
+                display: flex;
+            }
+
+            &_action {
+                margin-top: 16px;
+                
+                align-items: center;
+                gap: 8px;
+                display: none;
+
+                &_change {
+                    flex: 1 0 auto;
+                    padding: 12px;
+                    
+                    .text {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+
+                &_remove {
+                    width: 48px !important;
+                    height: 48px !important;
+                }
+            }
+            &_in.active {
+                border: none;
+            }
+            &_in {
+                height: 280px;
+                border-radius: 16px;
+                background: rgba(76, 191, 255, 0.05);
+                border: 3px dashed #00A4FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+
+            &_text {
+                position: relative;
+                // width: 100%;
+                // height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                z-index: 0;
+                padding-top: 90px;
+                text-align: center;font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                // position: relative;
+                color: $aqua;
+                max-width: 272px;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: calc(50% - (80px / 2));
+                    content: url('../img/icons/photo-plc.svg');
+                    width: 80px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_in {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 16px;
+                    overflow: hidden;
+
+                    .dz-preview {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+
+                    .dz-image {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;   
+                            object-fit: cover;
+                        }
+                    }
+
+                    .dz-details {
+                        display: none;
+                    }
+
+                    .dz-progress {
+                        display: none;
+                    }
+
+                    .dz-error-message {
+                        display: none;
+                    }
+
+                    .dz-success-mark {
+                        display: none;
+                    }
+
+                    .dz-error-mark {
+                        display: none;
+                    }
+                }
+
+  
+
+                
+            }
+        }
+    }
+}

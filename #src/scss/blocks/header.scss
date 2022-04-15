@@ -69,6 +69,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        position: relative;
 
         &_body {
             font-size: 16px;
@@ -103,6 +104,88 @@
             justify-content: center;
             width: 24px;
             height: 24px;
+        }
+
+        &_menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            z-index: 1000;
+        }
+
+        &_menu {
+            position: absolute;
+            top: 55px;
+            right: -5px;
+            background-color: #fff;
+            padding: 16px;
+            border-radius: 8px;
+            color: $black;
+            z-index: -1;
+            transform: translateY(-20px);
+            opacity: 0;
+            @include def-anim;
+            
+            &:after {
+                position: absolute;
+                top: -10px;
+                right: 10px;
+                content: url('../img/icons/triangle.svg');
+            }
+
+            &_item {
+                margin-bottom: 14px;
+
+                a {
+                    position: relative;
+                    padding-left: 32px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.02em;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    user-select: none;      
+
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 24px;
+                        height: 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                a.my-profile {
+
+                    &:after {
+                        content: url('../img/icons/account-1.svg');
+                    }
+                }
+
+                a.project-map {
+
+                    &:after {
+                        content: url('../img/icons/account-2.svg');
+                    }
+                }
+
+                a.select-language {
+
+                    &:after {
+                        content: url('../img/icons/account-3.svg');
+                    }
+                }
+
+                a.exit-btn {
+                    color: #E52421;
+                    &:after {
+                        content: url('../img/icons/account-4.svg');
+                    }
+                }
+            }
         }
     }
 }

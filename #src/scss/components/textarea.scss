@@ -1,0 +1,36 @@
+.textarea {
+    width: 100%;
+    label {
+        padding: 16px;
+        border: 1px solid rgba(#2C3137, .2);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .name {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            opacity: .5;
+        }
+    }
+
+    textarea {
+        resize: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        height: 200px;
+        
+
+        &::placeholder {
+            color: $black;
+            opacity: .4;
+        }
+    }
+}

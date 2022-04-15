@@ -1,0 +1,38 @@
+div(class='modal upload-photo', id='uploadPhoto')
+    div(class='modal__layer upload-photo__layer', data-micromodal-close)
+        .modal__inner 
+            form(class='modal__body upload-photo__content')
+                div(class='modal__body_head upload-photo__content_head')
+                    h2(class='modal__body_head_title upload-photo__content_head_title')  Загрузить новое фото
+                .upload-photo__content_img 
+                    div(class='upload-photo__content_img_in', )
+                        .upload-photo__content_img_text Нажмите для загрузки фото или перетащите файл в область 
+                        div(class='upload-photo__content_img_text_in' id='upload-photo', data-method='POST', data-url='./files')
+                    .upload-photo__content_img_action   
+                        button(class='upload-photo__content_img_action_change button button-aqua', type='button')
+                            .text Загрузить другое фото
+                        button(class='upload-photo__content_img_action_remove button button-aqua button-func', type='button')
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="white"/>
+                            </svg>
+
+
+                .profile-edit__content_fields 
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Название
+                                input(type="text", value='Лес в горах и человек')  
+                    //- dropdown
+                    .profile-edit__content_fields_row 
+                        div(class='textarea')
+                            label(for="")
+                                .name Название
+                                textarea(placeholder='Добавьте описание')   
+             
+                .profile-edit__content_action 
+                    button(class='button button-aqua', id='uploadFormWithPhoto')
+                        .text Загрузить фото
+                            
+ 
+

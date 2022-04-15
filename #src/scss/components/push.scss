@@ -1,0 +1,47 @@
+.push.active {
+    transform: translateX(0);
+}
+
+.push {
+    position: fixed;
+    top: 56px;
+    right: 28px;
+    padding: 20px 16px;
+    border-radius: 8px;
+    z-index: 10000;
+    display: none;
+    @include def-anim;
+    transform: translateX(30px);
+
+    .text {
+        padding-left: 40px;
+        position: relative;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    
+
+}
+
+.push.push-success {
+    background-color: $green;
+    .text {
+        &:after {
+            content: url('../img/icons/success.svg');
+        }
+    }
+}
