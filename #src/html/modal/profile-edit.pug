@@ -1,0 +1,76 @@
+div(class='modal profile-edit', id='profileEdit')
+    div(class='modal__layer profile-edit__layer', data-micromodal-close)
+        .modal__inner 
+            form(class='modal__body profile-edit__content')
+                div(class='modal__body_head profile-edit__content_head')
+                    h2(class='modal__body_head_title profile-edit__content_head_title')  Редактировать профиль
+                .profile-edit__content_img 
+                    .profile-edit__content_img_main     
+                        .profile-edit__content_img_main_rm 
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398Z" fill="white"/>
+                            </svg>
+                        picture 
+                            source(srcset='', type='image/webp')
+                            img(src="./img/profile-large.png", alt="")
+                    button.profile-edit__content_img_action Изменить фото
+                .profile-edit__content_fields 
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Имя
+                                input(type="text", value='Александра')    
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Фамилия
+                                input(type="text", value='Чернышевская')    
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Телефон
+                                input(type="tel", value='+7 978 744-89-00')    
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Instagram
+                                input(type="text", value='https://www.instagram.com/aleksaleksapro')    
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Facebook
+                                input(type="text", value='https://www.facebook.com/aleksaleksapro')  
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Страна
+                                input(type="text", value='Франция')  
+                        div(class='profile-edit__content_fields_item input')
+                            label(for="")
+                                .name Город
+                                input(type="text", value='Париж')  
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item checkbox')
+                            input(type="checkbox", id='ch1')
+                            label(for="ch1")
+                                .icon 
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.5525 7.00346C28.1029 7.49268 28.1525 8.33545 27.6632 8.88582L13.441 24.8858C13.188 25.1705 12.8253 25.3333 12.4445 25.3333C12.0636 25.3333 11.7009 25.1705 11.4479 24.8858L4.3368 16.8858C3.84758 16.3354 3.89715 15.4927 4.44753 15.0035C4.99791 14.5142 5.84067 14.5638 6.32989 15.1142L12.4445 21.9931L25.6701 7.11419C26.1594 6.56381 27.0021 6.51423 27.5525 7.00346Z" fill="#00A4FF"/>
+                                    </svg>
+                                .text Подтверждаю получение системных сообщений
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item checkbox')
+                            input(type="checkbox", id='ch2')
+                            label(for="ch2")
+                                .icon 
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.5525 7.00346C28.1029 7.49268 28.1525 8.33545 27.6632 8.88582L13.441 24.8858C13.188 25.1705 12.8253 25.3333 12.4445 25.3333C12.0636 25.3333 11.7009 25.1705 11.4479 24.8858L4.3368 16.8858C3.84758 16.3354 3.89715 15.4927 4.44753 15.0035C4.99791 14.5142 5.84067 14.5638 6.32989 15.1142L12.4445 21.9931L25.6701 7.11419C26.1594 6.56381 27.0021 6.51423 27.5525 7.00346Z" fill="#00A4FF"/>
+                                    </svg>
+                                .text Подтверждаю подписку на новости проекта
+                
+                .profile-edit__content_action 
+                    button(class='button button-aqua')
+                        .text Сохранить изменения
+                            
+ 
+

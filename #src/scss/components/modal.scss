@@ -1,0 +1,53 @@
+.modal.is-open {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.modal {
+    @include def-anim;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    
+    &__layer {
+        background: rgba(#290B47, .8);
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding: 20px;
+        
+    }
+
+
+    &__inner {
+        
+        width: 100%;
+        // height: 100%;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__body {
+        width: 600px;
+        
+
+        &_head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            &_title {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+}

@@ -167,6 +167,109 @@ body {
 .card__body_action_fr {
   margin-right: 8px;
 }
+.modal.is-open {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.modal {
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.modal__layer {
+  background: rgba(41, 11, 71, 0.8);
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+.modal__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal__body {
+  width: 600px;
+}
+.modal__body_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.modal__body_head_title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.input label {
+  padding: 16px;
+  border: 1px solid rgba(44, 49, 55, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input label .name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+.input label input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.checkbox label {
+  display: flex;
+}
+.checkbox label .icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(44, 49, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  flex: 0 0 auto;
+}
+.checkbox label .icon svg {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.checkbox label .text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 5px;
+}
+.checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.checkbox input:checked ~ label .icon svg {
+  opacity: 1;
+}
+
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -462,4 +565,71 @@ body {
 }
 .profile__body_col.profile__body_col--lg {
   width: 64%;
+}
+
+.profile-edit__content {
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+.profile-edit__content_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.profile-edit__content_img_main {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin-bottom: 8px;
+  position: relative;
+}
+.profile-edit__content_img_main_rm {
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  background-color: #00A4FF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.profile-edit__content_img_main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-edit__content_img_action {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #00A4FF;
+}
+.profile-edit__content_fields_row {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.profile-edit__content_fields_item {
+  width: 100%;
+}
+.profile-edit__content_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-edit__content_action .button {
+  width: 100%;
+  padding: 12px;
+}
+.profile-edit__content_action .button .text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
 }
