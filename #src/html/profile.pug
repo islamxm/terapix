@@ -1,0 +1,278 @@
+.profile    
+    .container 
+        .profile__in 
+            .profile__head  
+                h1(class="profile__head_title page__title") Мой профиль
+            
+            .profile__body 
+                div(class="profile__body_col profile__body_col--sm")
+                    div(class='profile__body_col_item profile-card')
+                        .profile-card__ex 
+                            button(class="profile-card__ex_btn button button-aqua button-func")
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.2929 2.29289C16.6834 1.90237 17.3166 1.90237 17.7071 2.29289L21.7071 6.29289C22.0976 6.68342 22.0976 7.31658 21.7071 7.70711L8.70711 20.7071C8.51957 20.8946 8.26522 21 8 21H4C3.44772 21 3 20.5523 3 20V16C3 15.7348 3.10536 15.4804 3.29289 15.2929L13.2927 5.2931L16.2929 2.29289ZM14 7.41421L5 16.4142V19H7.58579L16.5858 10L14 7.41421ZM18 8.58579L19.5858 7L17 4.41421L15.4142 6L18 8.58579Z" fill="white"/>
+                                </svg>
+                            button(class="profile-card__ex_btn button button-aqua button-func")
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM15.7071 12.2929C16.0976 12.6834 16.0976 13.3166 15.7071 13.7071L11.7071 17.7071C11.3166 18.0976 10.6834 18.0976 10.2929 17.7071L8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929C8.68342 13.9024 9.31658 13.9024 9.70711 14.2929L11 15.5858L14.2929 12.2929C14.6834 11.9024 15.3166 11.9024 15.7071 12.2929Z" fill="white"/>
+                                </svg>
+
+                        .profile-card__img
+                            img(src="./img/profile-large.png", alt="")
+                        .profile-card__info     
+                            .profile-card__info-name Александра
+                            .profile-card__info-lastname Чернышевская
+                        .profile-card__action 
+                            button.button.button-aqua 
+                                .text Суперзвезда
+                                .icon 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.5C12.3788 2.5 12.7251 2.714 12.8945 3.05279L15.4734 8.2106L21.144 9.03541C21.5206 9.0902 21.8335 9.35402 21.9511 9.71599C22.0687 10.078 21.9706 10.4753 21.6981 10.741L17.571 14.7649L18.4994 20.4385C18.5608 20.8135 18.4043 21.1908 18.0957 21.4124C17.787 21.6339 17.3794 21.6614 17.0438 21.4834L12 18.8071L6.95624 21.4834C6.62062 21.6614 6.21306 21.6339 5.9044 21.4124C5.59573 21.1908 5.4393 20.8135 5.50065 20.4385L6.42906 14.7649L2.30193 10.741C2.02942 10.4753 1.93136 10.078 2.04897 9.71599C2.16658 9.35402 2.47946 9.0902 2.85609 9.03541L8.5267 8.2106L11.1056 3.05279C11.275 2.714 11.6213 2.5 12 2.5ZM12 5.73607L10.082 9.57221C9.93561 9.86491 9.65531 10.0675 9.33147 10.1146L5.14842 10.723L8.19813 13.6965C8.43182 13.9243 8.53961 14.2519 8.4869 14.574L7.80004 18.7715L11.5313 16.7917C11.8244 16.6361 12.1756 16.6361 12.4687 16.7917L16.2 18.7715L15.5132 14.574C15.4604 14.2519 15.5682 13.9243 15.8019 13.6965L18.8516 10.723L14.6686 10.1146C14.3448 10.0675 14.0645 9.86491 13.9181 9.57221L12 5.73607Z" fill="white"/>
+                                    </svg>
+
+
+                    div(class='profile__body_col_item profile-rating')
+                        div(class='profile__body_col_item_head profile-rating__head') 
+                            h2.profile__body_col_item_head_title Рейтинги
+                        ul.profile-rating__list 
+                            li(class='profile-rating__list_item profile-rating__list_item--first')
+                                .profile-rating__list_item_head Топ 1
+                                .profile-rating__list_item_info
+                                    .profile-rating__list_item_info-day День
+                                        span 32
+                                    .profile-rating__list_item_info-week Неделя 
+                                        span 14
+                                    .profile-rating__list_item_info-month Месяц 
+                                        span 2
+
+                            li(class='profile-rating__list_item profile-rating__list_item--second')
+                                .profile-rating__list_item_head Топ 2
+                                .profile-rating__list_item_info
+                                    .profile-rating__list_item_info-day День
+                                        span 32
+                                    .profile-rating__list_item_info-week Неделя 
+                                        span 14
+                                    .profile-rating__list_item_info-month Месяц 
+                                        span 2
+                            li(class='profile-rating__list_item profile-rating__list_item--third')
+                                .profile-rating__list_item_head Топ 3
+                                .profile-rating__list_item_info
+                                    .profile-rating__list_item_info-day День
+                                        span 32
+                                    .profile-rating__list_item_info-week Неделя 
+                                        span 14
+                                    .profile-rating__list_item_info-month Месяц 
+                                        span 2
+
+
+                    div(class='profile__body_col_item profile-analytics')
+                        div(class='profile__body_col_item_head profile-analytics__head') 
+                            h2.profile__body_col_item_head_title Аналитика
+                        ul.profile-analytics__list 
+                            li.profile-analytics__list_item     
+                                .name Рейтинг
+                                .value 36
+                            li.profile-analytics__list_item     
+                                .name Ваши токены
+                                .value 15,3948393 TPX
+                            li.profile-analytics__list_item     
+                                .name Загруженные
+                                .value 19 фото
+                            li.profile-analytics__list_item     
+                                .name Участвуют в проекте
+                                .value 4 фото
+                            li.profile-analytics__list_item     
+                                .name Оплаченные МП
+                                .value 15,857
+                            li.profile-analytics__list_item     
+                                .name Друзья
+                                .value 40
+                    
+                    
+                div(class="profile__body_col profile__body_col--lg")
+                    div(class='profile__body_col_item profile-gallery')
+                        div(class='profile__body_col_item_head profile-gallery__head') 
+                            h2.profile__body_col_item_head_title Моя галерея 
+                                span 56
+                            button(class="profile__body_col_item_head_action button button-aqua")
+                                .text Добавить фото
+                        .profile-gallery__tabs 
+                            button(class="profile-gallery__tabs_item tab active") Все фото
+                            button(class="profile-gallery__tabs_item tab") Участвуют в проекте
+                        .profile-gallery__body 
+                            .profile-gallery__body_col  
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-1.png", alt="")
+                                    .card__body     
+                                        .card__body_name Лесная дорога
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-aqua')
+                                                .text Добавить в проект
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-4.png", alt="")
+                                    .card__body     
+                                        .card__body_name На пути домой
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-green')
+                                                .text Участвует в проекте
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-7.png", alt="")
+                                    .card__body     
+                                        .card__body_name Ловцы сияний
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-aqua')
+                                                .text Добавить в проект
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                            .profile-gallery__body_col  
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-2.png", alt="")
+                                    .card__body     
+                                        .card__body_name Черенковский телескоп
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-green')
+                                                .text Участвует в проекте
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-5.png", alt="")
+                                    .card__body     
+                                        .card__body_name Пара у дома
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-yellow')
+                                                .text В очередни на оплату
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-8.png", alt="")
+                                    .card__body     
+                                        .card__body_name Показ мод
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-green')
+                                                .text Участвует в проекте
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                            .profile-gallery__body_col  
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-3.png", alt="")
+                                    .card__body     
+                                        .card__body_name Ловцы сияний
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-aqua')
+                                                .text Добавить в проект
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-6.png", alt="")
+                                    .card__body     
+                                        .card__body_name Художник в Нью Йорке
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-green')
+                                                .text Участвует в проекте
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+                                div(class='profile-gallery__body_col_item card') 
+                                    .card__img 
+                                        picture 
+                                            source(srcset='', type='image/webp')
+                                            img(src="./img/card/card-1.png", alt="")
+                                    .card__body     
+                                        .card__body_name Лесная дорога
+                                        .card__body_info    
+                                            .card__body_info-date Опубликовано 19.09.2021. 
+                                            .card__body_info-size Размер 10,56 МБ.
+                                        .card__body_action 
+                                            button(class='card__body_action_fr button button-aqua')
+                                                .text Добавить в проект
+                                            button(class='card__body_action_fr button button-aqua button-func')
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
+                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
+                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
+                                                    </svg>
+
+

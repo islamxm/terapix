@@ -1,0 +1,20 @@
+//colors
+$black:#271F22;
+$aqua:#00A4FF;
+$blue: #4A3AFF;
+$purp: #DD37E1;
+$green: #30C04F;
+$body: #9328FF;
+$gray: #7D797A;
+$yellow: #FFD65C;
+
+
+//mixins
+@mixin def-anim {
+    transition: all .3s ease;
+}
+
+
+@mixin proxima {
+    font-family: ProximaNova;
+}

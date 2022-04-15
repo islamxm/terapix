@@ -1,0 +1,108 @@
+.header {
+    border-bottom: 1px solid rgba(#fff, .1);
+    &__in {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+
+        &_item {
+            margin: 0 4px;
+
+            a {
+                padding: 12px 16px;
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.1);
+                @include def-anim;
+                font-size: 18px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: #fff;
+                    color: $purp;
+
+                    .header__nav_item_btn {
+                        
+                        svg {
+                            path {
+                                fill: $purp;
+                            }
+                        }
+                    }
+                }
+
+
+                .header__nav_item_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 8px;
+
+                    svg {
+                        path {
+                            @include def-anim;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &_body {
+            font-size: 16px;
+
+            &-name {
+                text-align: right;
+            }
+
+            &-lastname {
+                text-align: right;
+            }
+        }
+
+        &_img {
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            overflow: hidden;
+            margin-left: 8px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_btn {
+            margin-left: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

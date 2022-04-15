@@ -1,0 +1,22 @@
+.tab {
+    padding: 12px 16px;
+    color: $black;
+    border: 2px solid $blue;
+    border-radius: 24px;
+    @include def-anim;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+.tab.active {
+    color: #fff;
+    background-color: $blue;
+}

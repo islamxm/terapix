@@ -1,0 +1,49 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 24px;
+    @include def-anim;
+    cursor: pointer;
+
+    .text {
+        color: #fff;
+        font-size: 16px;
+        line-height: 19px;
+        @include def-anim;
+    }
+
+    .icon {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        @include def-anim;
+    }
+}
+
+.button.button-aqua {
+    background-color: $aqua;
+}
+
+.button.button-green {
+    background-color: $green;
+}
+
+.button.button-yellow {
+    background-color: $yellow;
+
+    .text {
+        color: #7B6219;
+    }
+}
+
+.button.button-func {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    padding: 0;
+}
