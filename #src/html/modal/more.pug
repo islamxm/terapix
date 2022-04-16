@@ -1,0 +1,20 @@
+div(class='more modal' id='moreModal')
+    div(class='more__layer modal__layer', data-micromodal-close)
+        .modal__inner 
+            div(class='more__body modal__body')
+                div(class='more__body_head modal__body_head')
+                    h2(class='more__body_head_title modal__body_head_title')  Подробнее о рейтинге
+                    button(class='modal__body_head_close', type='button', data-micromodal-close)
+                        img(src="./img/icons/close-gray.svg", alt="")
+                .more__body_content 
+                    .more__body_content_text 
+                        | Система рейтингов Американской киноассоциации (англ. MPAA film rating system) — принятая в США система оценки содержания фильма, введённая Американской.
+                    .more__body_content_text 
+                        span Рейтинг G — General audiences
+                        | Фильм демонстрируется без ограничений. Данный рейтинг показывает, что оценённый фильм не содержит ничего, что большинство родителей могло бы посчитать неприемлемым для просмотра или прослушивания даже самыми маленькими детьми. 
+                    .more__body_content_text
+                        span Рейтинг G — General audiences
+                        | Фильм демонстрируется без ограничений. Данный рейтинг показывает, что оценённый фильм не содержит ничего, что большинство родителей могло бы посчитать неприемлемым для просмотра или прослушивания даже самыми маленькими детьми. 
+                .more__body_action 
+                    button(class='more__body_action_btn button button-aqua', data-micromodal-close='moreModal', data-micromodal-trigger='rateModal')
+                        .text Вернуться к рейтингу

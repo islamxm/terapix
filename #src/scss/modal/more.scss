@@ -1,0 +1,46 @@
+.more {
+
+    &__layer {
+
+    }
+    &__body {
+        width: 1014px;
+
+        &_head {
+
+        }
+
+        &_content {
+            margin-bottom: 36px;
+            
+            &_text {
+                margin-bottom: 42px;
+                font-size: 20px;
+                line-height: 28px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                span {
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &_action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_btn {
+                padding: 12px 38px;
+                .text {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

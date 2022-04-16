@@ -1,5 +1,6 @@
 //LIBS
 @import './libs/dropzone.scss';
+// @import './libs/tippy.scss';
 
 //OVERALL
 @import './fonts.scss';
@@ -16,15 +17,22 @@
 @import './components/checkbox.scss';
 @import './components/push.scss';
 @import './components/textarea.scss';
+@import './components/table.scss';
+@import './components/tip.scss';
 
 
 //BLOCKS
 @import './blocks/header.scss';
 @import './blocks/profile.scss';
+@import './blocks/rating.scss';
 
 
 //MODAL
 @import './modal/profile-edit.scss';
 @import './modal/upload-photo.scss';
+@import './modal/cert.scss';
+@import './modal/rate.scss';
+@import './modal/more.scss';
+@import './modal/orders.scss';
 
 

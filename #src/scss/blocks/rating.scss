@@ -1,0 +1,59 @@
+.rating {
+
+    &__in {
+
+    }
+
+    &__head {
+        margin-bottom: 40px;
+
+        &_title {
+
+        }
+
+        &_subtitle {
+            font-size: 20px;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+        &_item {
+            padding: 32px;
+            border-radius: 40px;
+            background-color: #fff;
+        }
+
+
+        &_table {
+            width: 72%;
+            
+        }
+
+
+        &_filter {
+            width: 26.5%;
+            height: 288px;
+
+            &_head {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 24px;
+            }
+
+            &_list {
+
+                &_item {
+                    
+                }
+            }
+        }
+    }
+}

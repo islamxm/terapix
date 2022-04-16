@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    include ./html/head.pug
+    body 
+        .wrapper 
+            include ./html/header.pug
+            main.main 
+                include ./html/rating.pug
+    
+    //- include ./html/modal/profile-edit.pug
+    //- include ./html/modal/upload-photo.pug
+    div(class='push push-success')   
+        .text Изменения профиля сохранены
+    
+    script(src='./js/app.min.js')

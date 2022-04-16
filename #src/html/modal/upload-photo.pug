@@ -4,6 +4,8 @@ div(class='modal upload-photo', id='uploadPhoto')
             form(class='modal__body upload-photo__content')
                 div(class='modal__body_head upload-photo__content_head')
                     h2(class='modal__body_head_title upload-photo__content_head_title')  Загрузить новое фото
+                    button(class='modal__body_head_close', type='button', data-micromodal-close)
+                        img(src="./img/icons/close-gray.svg", alt="")
                 .upload-photo__content_img 
                     div(class='upload-photo__content_img_in', )
                         .upload-photo__content_img_text Нажмите для загрузки фото или перетащите файл в область 
@@ -28,7 +30,7 @@ div(class='modal upload-photo', id='uploadPhoto')
                         div(class='textarea')
                             label(for="")
                                 .name Название
-                                textarea(placeholder='Добавьте описание')   
+                                textarea(placeholder='Добавьте описание')    
              
                 .profile-edit__content_action 
                     button(class='button button-aqua', id='uploadFormWithPhoto')

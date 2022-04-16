@@ -1,0 +1,130 @@
+.orders {
+
+    &__layer {
+
+    }
+
+    &__body {
+        width: 574px;
+
+        &_head {
+
+            &_title {
+
+            }
+        }
+
+
+        &_list {
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba($black, .1);
+
+            &_item {    
+                display: flex;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                // align-items: flex-start;
+
+                &_img {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    background-color: #ccc;
+                    flex: 0 0 auto;
+                    margin-right: 17px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &_body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // min-height: 100%;
+                    padding: 5px 0;
+                    flex: 1 0 auto;
+
+                    &_name {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+
+                    &_info {
+                        font-size: 14px;
+                        line-height: 20px;
+                        opacity: .6;
+
+                        &_size {
+
+                        }
+
+                        &_date {
+
+                        }
+                    }
+                }
+
+                &_price {
+                    padding-top: 5px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-right: 16px;
+                }
+
+                &_action {
+                    button {
+                        width: 48px !important;
+                        height: 48px !important;
+                    }
+                }
+            }
+        }
+
+        &_action {
+            padding-top: 24px;
+            &_top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 24px;
+
+                &_name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+
+                &_value {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            &_btn {
+
+                .button {
+                    padding: 12px;
+                    width: 100%;
+
+                    .text {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+    }
+}
