@@ -95,7 +95,19 @@
                 div(class='rating__body_item rating__body_filter') 
                     h2.rating__body_filter_head Фильтр
                     .rating__body_filter_list
-                        .rating__body_filter_list_item 
+                        div(class='rating__body_filter_list_item dropdown', data-selected)
+                            div(class='dropdown__name') Страна
+                            div(class='dropdown__head', data-path='one') Все страны
+                            div(class='dropdown__list', data-target='one')
+                                div(class='dropdown__list_item', data-value='select1') Все страны
+                                div(class='dropdown__list_item', data-value='select2') Россия
+                        div(class='rating__body_filter_list_item dropdown', data-selected)
+                            div(class='dropdown__name') Период
+                            div(class='dropdown__head', data-path='two') За все время
+                            div(class='dropdown__list', data-target='two')
+                                div(class='dropdown__list_item', data-value='select1') За все время
+                                div(class='dropdown__list_item', data-value='select2') Сегодня
+
                             
                     
             

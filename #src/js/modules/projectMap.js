@@ -86,19 +86,9 @@ export const projectMap = () => {
                     iconImageOffset: [-25, -50],
                 });
         
-                // myPlacemark3 = new ymaps.Placemark([55.85, 1.0], {
-                //     balloonContent: 'Большая иконка'
-                // }, {
-                //     iconLayout: 'default#image',
-                //     iconImageClipRect: [[69,0], [97, 46]],
-                //     iconImageHref: 'images/sprite.png',
-                //     iconImageSize: [35, 63],
-                //     iconImageOffset: [-35, -63]
-                // });
         
             myMap.geoObjects.add(myPlacemark1)
                 .add(myPlacemark2);
-                // .add(myPlacemark3);
         }
     }
     

@@ -5,6 +5,8 @@ import { uploadPhoto } from './modules/uploadPhoto.js';
 import { infoTip } from './modules/infoTip.js';
 import { mobileMenu } from './modules/mobileMenu.js';
 import { projectMap } from './modules/projectMap.js';
+import { dropdown } from './modules/dropdown.js';
+import { dropMenu } from './modules/dropMenu.js';
 
 
 
@@ -16,4 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     infoTip();
     mobileMenu();
     projectMap();
+    dropdown();
+    dropMenu();
 });
