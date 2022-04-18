@@ -953,6 +953,61 @@ body {
   opacity: 0.6;
 }
 
+.mark {
+  width: 364px;
+}
+.mark__body {
+  display: flex;
+  align-items: flex-start;
+}
+.mark__body_img {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.mark__body_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mark__body_descr_name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.mark__body_descr_info {
+  margin-bottom: 16px;
+}
+.mark__body_descr_info_item {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+.mark__body_descr_soc {
+  display: flex;
+  align-items: center;
+}
+.mark__body_descr_soc_item {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  margin: 0 4px;
+}
+.mark__body_descr_soc_item svg {
+  width: 24px;
+  height: 24px;
+}
+.mark__body_descr_soc_item:last-child {
+  margin-right: 0;
+}
+.mark__body_descr_soc_item:first-child {
+  margin-left: 0;
+}
+
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1525,6 +1580,55 @@ body {
   line-height: 24px;
   margin-bottom: 24px;
 }
+.map__head {
+  margin-bottom: 29px;
+}
+.map__head_subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.map__body {
+  height: calc(100vh - 210px);
+}
+.map__body_in {
+  height: 100%;
+}
+.map__body #map .ymaps-2-1-79-map {
+  height: 100% !important;
+}
+.map__body #map .ymaps-2-1-79-balloon {
+  box-shadow: none;
+}
+.map__body #map .ymaps-2-1-79-balloon .ymaps-2-1-79-balloon__layout {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.map__body #map .ymaps-2-1-79-balloon .ymaps-2-1-79-balloon__layout .ymaps-2-1-79-balloon__close .ymaps-2-1-79-balloon__close-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/icons/mark-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.map__body #map .ymaps-2-1-79-balloon .ymaps-2-1-79-balloon__layout .ymaps-2-1-79-balloon__content {
+  padding: 16px;
+  padding-right: 0;
+}
+.map__body #map .ymaps-2-1-79-balloon .ymaps-2-1-79-balloon__layout .ymaps-2-1-79-balloon__content ymaps {
+  height: auto !important;
+}
+.map__body #map .ymaps-2-1-79-balloon .ymaps-2-1-79-balloon__tail {
+  display: none;
+}
+
 .profile-edit__content_img {
   display: flex;
   flex-direction: column;

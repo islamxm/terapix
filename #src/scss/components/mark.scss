@@ -1,0 +1,70 @@
+.mark {
+    width: 364px;
+    
+    // padding: 16px;
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+
+        &_img {
+            margin-right: 16px;
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            overflow: hidden;
+            flex: 0 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;   
+                object-fit: cover;
+            }
+        }
+
+        &_descr {   
+
+            &_name {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+
+            &_info {
+                margin-bottom: 16px;
+                &_item {
+                    font-size: 14px;
+                    line-height: 20px;
+                    opacity: .8;
+                }
+            }
+
+            &_soc {
+                display: flex; 
+                align-items: center;
+
+                &_item {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 100%;
+                    margin: 0 4px;
+                    
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+        }   
+    }
+}

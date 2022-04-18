@@ -8,48 +8,52 @@ export const uploadPhoto = () => {
     const remove = document.querySelector('.upload-photo__content_img_action_remove');
     const change = document.querySelector('.upload-photo__content_img_action_change');
     const uploadBtn = document.querySelector('#uploadFormWithPhoto');
+    const element = document.querySelector('#upload-photo');
+
+
+    if(element) {
+        let field = new Dropzone(element, {
+            url: el.dataset.url,
+            method: el.dataset.method,
+            uploadMultiple: false,
+            thumbnailWidth: null,
+            thumbnailHeight: null,
+            autoQueue: false
+        });
     
-
-    let field = new Dropzone('#upload-photo', {
-        url: el.dataset.url,
-        method: el.dataset.method,
-        uploadMultiple: false,
-        thumbnailWidth: null,
-        thumbnailHeight: null,
-        autoQueue: false
-    });
-
-    field.on('addedfile', () => {
-        place.classList.add('active');
-        action.classList.add('active');
-    });
-
-    field.on('addedfile', function(file) {
-        if(remove) {
-            remove.addEventListener('click', (e) => {
-                field.removeFile(file);
-
-                place.classList.remove('active');
-                action.classList.remove('active');
-            });
-        }
-
-        if(change) {
-            change.addEventListener('click', () => {
-                field.removeFile(file);
-
-                place.classList.remove('active');
-                action.classList.remove('active');
-            });
-        }
-
-        if(uploadBtn) {
-            uploadBtn.addEventListener('click', (e) => {
-                field.uploadFile(file);
-            });
-        }
-    });
-
+        field.on('addedfile', () => {
+            place.classList.add('active');
+            action.classList.add('active');
+        });
+    
+        field.on('addedfile', function(file) {
+            if(remove) {
+                remove.addEventListener('click', (e) => {
+                    field.removeFile(file);
+    
+                    place.classList.remove('active');
+                    action.classList.remove('active');
+                });
+            }
+    
+            if(change) {
+                change.addEventListener('click', () => {
+                    field.removeFile(file);
+    
+                    place.classList.remove('active');
+                    action.classList.remove('active');
+                });
+            }
+    
+            if(uploadBtn) {
+                uploadBtn.addEventListener('click', (e) => {
+                    field.uploadFile(file);
+                });
+            }
+        });
+    
+    }
+    
     
 
     

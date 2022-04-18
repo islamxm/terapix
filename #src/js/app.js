@@ -4,6 +4,7 @@ import { accountMenu } from './modules/accountMenu.js';
 import { uploadPhoto } from './modules/uploadPhoto.js';
 import { infoTip } from './modules/infoTip.js';
 import { mobileMenu } from './modules/mobileMenu.js';
+import { projectMap } from './modules/projectMap.js';
 
 
 
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
     uploadPhoto();
     infoTip();
     mobileMenu();
+    projectMap();
 });
