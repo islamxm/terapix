@@ -57,7 +57,6 @@
                 background-color: rgba(#4A3AFF, .2);
 
                 &_el {
-                    width: 70%;
                     background-color: #4A3AFF;
                     border-radius: 24px;
                     height: 100%;
@@ -115,6 +114,83 @@
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .rate {
+
+        &__layer {
+
+        }
+
+        &__body {
+
+            &_head {
+
+                &_title {
+
+                }
+
+                &_subtitle {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            &_action {
+                flex-wrap: wrap;
+
+                &_social {
+                    margin-bottom: 15px;
+                }
+
+                &_btn {
+                    width: 100%;
+
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 470px) {
+
+    .rate {
+
+        &__body {
+
+
+            &_main {
+
+                &_top {
+
+                    &_level {
+                        .text {
+                            font-size: 16px;
+                            line-height: 21px;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            &_action {
+
+                &_social {
+
+                    &_name {
+                        display: none;
                     }
                 }
             }

@@ -363,6 +363,13 @@
                 padding-left: 16px;
                 padding-right: 16px;
 
+                a {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 48px;
+                    border-radius: 600px;
+                }
+
 
                 &_btn {
                     transform: rotate(-90deg);
@@ -376,6 +383,41 @@
                 a {
                     display: inline-flex;
                 }
+
+                &:hover {
+                    a {
+                        background: rgba(255, 255, 255, 0.1);
+                        color: #fff;
+
+                        .header__nav_item_btn {
+
+                            svg {
+                                path {
+                                    fill: #fff !important;
+                                }
+                            }
+                        }
+    
+                        .header__nav_item_btn {
+                            
+                            svg {
+                                path {
+                                    fill: $purp;
+                                }
+                            }
+                        }
+                    }
+                    .header__nav_item_menu.active {
+                        opacity: 0;
+                        z-index: -1;
+                        transform: unset;
+                        pointer-events: none;
+                        visibility: hidden;
+                        display: none;
+                    }
+                }
+
+                
             }
         }
 

@@ -62,3 +62,66 @@
         }
     }
 }
+
+
+@media (max-width: 700px) {
+
+    .modal {
+
+
+        &__layer {
+            padding: 5vh 15px;
+
+        }
+
+        &__inner {
+
+        }
+
+        &__body {
+            padding: 30px 15px;
+            border-radius: 20px;
+            &_head {
+
+                &_title {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                &_close {
+                    top: 15px;
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .modal {
+
+        &__body {
+            &_head {
+
+                &_title {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+
+                &_close {
+                    top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .modal {
+
+        &__layer {
+            padding: 5vh 10px;
+        }
+    }
+}

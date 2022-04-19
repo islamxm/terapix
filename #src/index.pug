@@ -15,6 +15,15 @@ html(lang="en")
     include ./html/modal/orders.pug
     div(class='push push-success active')   
         .text Изменения профиля сохранены
-    
+    //- submenu
+    div(class='submenu', data-menutarget='rating')
+        .submenu__in 
+            .submenu__back Назад
+            .submenu__list 
+                .submenu__list_item 
+                    a(class='submenu__list_item_link', href="#") Пользователи
+                .submenu__list_item 
+                    a(class='submenu__list_item_link', href="#") Блогеры
+
     script(src='./js/app.min.js')
         

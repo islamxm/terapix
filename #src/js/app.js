@@ -7,6 +7,7 @@ import { mobileMenu } from './modules/mobileMenu.js';
 import { projectMap } from './modules/projectMap.js';
 import { dropdown } from './modules/dropdown.js';
 import { dropMenu } from './modules/dropMenu.js';
+import { headerSubMenu } from './modules/headerSubMenu.js';
 
 
 
@@ -20,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
     projectMap();
     dropdown();
     dropMenu();
+    headerSubMenu();
 });
