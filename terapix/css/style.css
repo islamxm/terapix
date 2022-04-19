@@ -673,6 +673,54 @@ body {
 .card__body_action_fr {
   margin-right: 8px;
 }
+.card__body_action_fr.button-func {
+  background-image: url("../img/icons/func.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+.card__body_action_menu.active {
+  transform: translateY(115%);
+  opacity: 1;
+  z-index: 10;
+}
+.card__body_action_click {
+  position: relative;
+}
+.card__body_action_menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+  background: #FFFFFF;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.2));
+}
+.card__body_action_menu:after {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  background-color: #fff;
+  content: "";
+  border-radius: 3px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+}
+.card__body_action_menu_item {
+  display: block;
+  padding: 8px 16px;
+}
+.card__body_action_menu_item:hover {
+  text-decoration: underline;
+}
+.card__body_action_menu_item.card__body_action_menu_item--delete {
+  color: #E52421;
+}
+
 .modal.is-open {
   opacity: 1;
   z-index: 1000;
@@ -1353,10 +1401,10 @@ body {
     justify-content: center;
   }
   .header__nav_item {
-    width: 100%;
     margin-bottom: 24px;
     margin-right: 0;
     margin-left: 0;
+    display: inline-flex;
     padding-left: 16px;
     padding-right: 16px;
   }

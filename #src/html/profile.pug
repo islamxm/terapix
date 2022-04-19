@@ -12,7 +12,7 @@
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.2929 2.29289C16.6834 1.90237 17.3166 1.90237 17.7071 2.29289L21.7071 6.29289C22.0976 6.68342 22.0976 7.31658 21.7071 7.70711L8.70711 20.7071C8.51957 20.8946 8.26522 21 8 21H4C3.44772 21 3 20.5523 3 20V16C3 15.7348 3.10536 15.4804 3.29289 15.2929L13.2927 5.2931L16.2929 2.29289ZM14 7.41421L5 16.4142V19H7.58579L16.5858 10L14 7.41421ZM18 8.58579L19.5858 7L17 4.41421L15.4142 6L18 8.58579Z" fill="white"/>
                                 </svg>
-                            button(class="profile-card__ex_btn button button-aqua button-func")
+                            button(class="profile-card__ex_btn button button-aqua button-func", data-micromodal-trigger='certificate')
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 4C4 2.89543 4.89543 2 6 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289L19.7071 7.29289C19.8946 7.48043 20 7.73478 20 8V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4ZM17.5858 8L14 4.41421V8H17.5858ZM12 4L6 4V20H18V10H13C12.4477 10 12 9.55228 12 9V4ZM15.7071 12.2929C16.0976 12.6834 16.0976 13.3166 15.7071 13.7071L11.7071 17.7071C11.3166 18.0976 10.6834 18.0976 10.2929 17.7071L8.29289 15.7071C7.90237 15.3166 7.90237 14.6834 8.29289 14.2929C8.68342 13.9024 9.31658 13.9024 9.70711 14.2929L11 15.5858L14.2929 12.2929C14.6834 11.9024 15.3166 11.9024 15.7071 12.2929Z" fill="white"/>
                                 </svg>
@@ -94,7 +94,7 @@
                         div(class='profile__body_col_item_head profile-gallery__head') 
                             h2.profile__body_col_item_head_title Моя галерея 
                                 span 56
-                            button(class="profile__body_col_item_head_action button button-aqua")
+                            button(class="profile__body_col_item_head_action button button-aqua", data-micromodal-trigger='ordersModal')
                                 .text Добавить фото
                         .profile-gallery__tabs 
                             button(class="profile-gallery__tabs_item tab active") Все фото
@@ -111,15 +111,16 @@
                                         .card__body_info    
                                             .card__body_info-date Опубликовано 19.09.2021. 
                                             .card__body_info-size Размер 10,56 МБ.
-                                        .card__body_action 
-                                            button(class='card__body_action_fr button button-aqua')
+                                        div(class='card__body_action') 
+                                            button(class='card__body_action_fr button button-aqua', data-micromodal-trigger='ordersModal')
                                                 .text Добавить в проект
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc1')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc1')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
+                                            
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -133,12 +134,12 @@
                                         .card__body_action 
                                             button(class='card__body_action_fr button button-green')
                                                 .text Участвует в проекте
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc2')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc2')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -150,14 +151,14 @@
                                             .card__body_info-date Опубликовано 19.09.2021. 
                                             .card__body_info-size Размер 10,56 МБ.
                                         .card__body_action 
-                                            button(class='card__body_action_fr button button-aqua')
+                                            button(class='card__body_action_fr button button-aqua', data-micromodal-trigger='ordersModal')
                                                 .text Добавить в проект
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc3')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc3')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                             .profile-gallery__body_col  
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
@@ -172,12 +173,12 @@
                                         .card__body_action 
                                             button(class='card__body_action_fr button button-green')
                                                 .text Участвует в проекте
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc4')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc4')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -191,12 +192,12 @@
                                         .card__body_action 
                                             button(class='card__body_action_fr button button-yellow')
                                                 .text В очередни на оплату
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc5')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc5')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -210,12 +211,12 @@
                                         .card__body_action 
                                             button(class='card__body_action_fr button button-green')
                                                 .text Участвует в проекте
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc6')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc6')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                             .profile-gallery__body_col  
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
@@ -228,14 +229,14 @@
                                             .card__body_info-date Опубликовано 19.09.2021. 
                                             .card__body_info-size Размер 10,56 МБ.
                                         .card__body_action 
-                                            button(class='card__body_action_fr button button-aqua')
+                                            button(class='card__body_action_fr button button-aqua', data-micromodal-trigger='ordersModal')
                                                 .text Добавить в проект
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc7')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc7')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -249,12 +250,12 @@
                                         .card__body_action 
                                             button(class='card__body_action_fr button button-green')
                                                 .text Участвует в проекте
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc8')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc8')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
                                 div(class='profile-gallery__body_col_item card') 
                                     .card__img 
                                         picture 
@@ -266,13 +267,13 @@
                                             .card__body_info-date Опубликовано 19.09.2021. 
                                             .card__body_info-size Размер 10,56 МБ.
                                         .card__body_action 
-                                            button(class='card__body_action_fr button button-aqua')
+                                            button(class='card__body_action_fr button button-aqua', data-micromodal-trigger='ordersModal')
                                                 .text Добавить в проект
-                                            button(class='card__body_action_fr button button-aqua button-func')
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" fill="white"/>
-                                                    <path d="M10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6Z" fill="white"/>
-                                                    <path d="M10 18C10 19.1046 10.8954 20 12 20C13.1046 20 14 19.1046 14 18C14 16.8954 13.1046 16 12 16C10.8954 16 10 16.8954 10 18Z" fill="white"/>
-                                                    </svg>
+                                            div(class='card__body_action_click action-menu')
+                                                button(class='card__body_action_fr button button-aqua button-func action-menu__btn', data-path='galleryFunc9')
+                                                        
+                                                div(class='card__body_action_menu action-menu__list', data-target='galleryFunc9')
+                                                    a(class='card__body_action_menu_item', href='#') Изменить
+                                                    a(class='card__body_action_menu_item card__body_action_menu_item--delete', href='#') Удалить
 
 

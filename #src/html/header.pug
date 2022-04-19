@@ -33,14 +33,14 @@ header.header
                     a(href="#") FAQ  
 
 
-            .header__action
+            div(class='header__action action-menu')
                 .header__action_body
                     .header__action_body-name Александра
                     .header__action_body-lastname Чернышевская
                 .header__action_img 
                     img(src="./img/profile-small.png", alt="") 
-                div(class='header__action_btn', data-path='account') 
-                ul(class='header__action_menu', data-target='account') 
+                div(class='header__action_btn action-menu__btn', data-path='account') 
+                ul(class='header__action_menu action-menu__list', data-target='account') 
                     li(class='header__action_menu_item')
                         a(href="#", class='my-profile') Мой профиль 
                     li(class='header__action_menu_item')

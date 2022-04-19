@@ -355,11 +355,11 @@
             }
 
             &_item {
-                width: 100%;
+                // width: 100%;
                 margin-bottom: 24px;
                 margin-right: 0;
                 margin-left: 0;
-
+                display: inline-flex;
                 padding-left: 16px;
                 padding-right: 16px;
 
