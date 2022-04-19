@@ -841,6 +841,8 @@ body {
 
 .push.active {
   transform: translateX(0);
+  opacity: 1;
+  z-index: 10000;
 }
 
 .push {
@@ -849,8 +851,8 @@ body {
   right: 28px;
   padding: 20px 16px;
   border-radius: 8px;
-  z-index: 10000;
-  display: none;
+  z-index: -1;
+  opacity: 0;
   transition: all 0.3s ease;
   transform: translateX(30px);
 }
@@ -1058,6 +1060,11 @@ body {
 
 .dropdown.active:after {
   transform: rotate(180deg);
+}
+
+.dropdow.disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
 
 .dropdown {

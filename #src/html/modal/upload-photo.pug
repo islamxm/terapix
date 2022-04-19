@@ -25,7 +25,13 @@ div(class='modal upload-photo', id='uploadPhoto')
                             label(for="")
                                 .name Название
                                 input(type="text", value='Лес в горах и человек')  
-                    //- dropdown
+                    .profile-edit__content_fields_row 
+                        div(class='profile-edit__content_fields_item dropdown', data-selected)
+                            div(class='dropdown__name') Номинация
+                            div(class='dropdown__head', data-path='nomination') Выберите номинацию
+                            div(class='dropdown__list', data-target='nomination')
+                                div(class='dropdown__list_item', data-value='select1') Выберите номинацию
+                                div(class='dropdown__list_item', data-value='select2') Выберите номинацию
                     .profile-edit__content_fields_row 
                         div(class='textarea')
                             label(for="")
