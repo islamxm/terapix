@@ -2359,7 +2359,6 @@ body {
   height: 80px;
   border-radius: 4px;
   overflow: hidden;
-  background-color: #ccc;
   flex: 0 0 auto;
   margin-right: 17px;
 }
@@ -2423,4 +2422,44 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media (max-width: 620px) {
+  .orders__body_list_item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .orders__body_list_item_img {
+    width: 48%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .orders__body_list_item_img img {
+    object-fit: cover;
+  }
+  .orders__body_list_item_price {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    width: 45%;
+  }
+  .orders__body_list_item_action {
+    width: 45%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+  }
+  .orders__body_list_item_body {
+    justify-content: flex-start;
+    width: 48%;
+    flex: 0 0 auto;
+  }
+  .orders__body_action_top {
+    flex-wrap: wrap;
+  }
+  .orders__body_action_top_name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }

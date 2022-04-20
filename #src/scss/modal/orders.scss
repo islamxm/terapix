@@ -33,7 +33,6 @@
                     height: 80px;
                     border-radius: 4px;
                     overflow: hidden;
-                    background-color: #ccc;
                     flex: 0 0 auto;
                     margin-right: 17px;
 
@@ -126,5 +125,73 @@
             }
         }
 
+    }
+}
+
+
+@media (max-width:620px) {
+
+    .orders {
+
+        &__body {
+
+            &_list {
+
+                &_item {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    &_img {
+                        width: 48%;
+                        height: auto;
+                        margin-bottom: 15px;
+                        margin-right: 0;
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+
+                    &_price {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 0;
+                        width: 45%;
+                    }
+
+                    &_action {
+                        width: 45%;
+                        justify-content: flex-end;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    &_body {
+                        justify-content: flex-start;
+                        width: 48%;
+                        flex: 0 0 auto;
+                    }
+
+                    
+                }
+            }
+
+            &_action {
+                
+                &_top {
+                    flex-wrap: wrap;
+
+                    &_name  {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                    &_value {
+                        
+                    }
+                }
+            }
+
+        }
+
+        
     }
 }
