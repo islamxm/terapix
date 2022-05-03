@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    include ./html/head.pug
+    body 
+        .wrapper 
+            include ./html/header.pug
+            main.main 
+                include ./html/faq.pug
+    include ./html/modal/profile-edit.pug
+    include ./html/modal/upload-photo.pug
+    include ./html/modal/cert.pug
+    include ./html/modal/rate.pug
+    include ./html/modal/more.pug
+    include ./html/modal/orders.pug
+    div(class='push push-success active')   
+        .text Изменения профиля сохранены
+    //- submenu
+    div(class='submenu', data-menutarget='rating')
+        .submenu__in 
+            .submenu__back Назад
+            .submenu__list 
+                .submenu__list_item 
+                    a(class='submenu__list_item_link', href="#") Пользователи
+                .submenu__list_item 
+                    a(class='submenu__list_item_link', href="#") Блогеры
+
+    script(src='./js/app.min.js')

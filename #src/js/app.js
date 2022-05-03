@@ -8,6 +8,7 @@ import { projectMap } from './modules/projectMap.js';
 import { dropdown } from './modules/dropdown.js';
 import { dropMenu } from './modules/dropMenu.js';
 import { headerSubMenu } from './modules/headerSubMenu.js';
+import { faqAccordion } from './modules/faqAccordion.js';
 
 
 
@@ -22,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdown();
     dropMenu();
     headerSubMenu();
+    faqAccordion();
 });
